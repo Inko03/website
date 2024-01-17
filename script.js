@@ -13,7 +13,6 @@ const menuIn = document.getElementById("menu-burger-in")
 const menuClick = document.getElementById("menu-to-click")
 const menuu = document.getElementById("menu-burger")
 
-console.log(select.children[0])
 document.getElementById("body").addEventListener("click",(e)=>{
     if(e.target.id!="menu-burger"){
         if(menuIn.classList.contains("burger-open")){
@@ -28,9 +27,7 @@ document.getElementById("body").addEventListener("click",(e)=>{
     if(e.target.id==="menu-burger"){
         menuIn.classList.toggle('burger-open')
         menuClick.classList.toggle("menu-active")
-        console.log(e.target.id)
     }
-    console.log(e.target.id)
     if(e.target.id!="location-arrow"&&e.target.id!="loca" ){
         if(select.classList.contains("toggle")){
             select.classList.remove("toggle")
@@ -63,7 +60,7 @@ document.getElementById("body").addEventListener("click",(e)=>{
         selectProperty.parentElement.children[2].classList.toggle("rotete")
         for(let i = 0; i<selectProperty.children.length;i++){
             setTimeout(()=>{
-                console.log(selectProperty.children[i].classList.add("slow"))
+                selectProperty.children[i].classList.add("slow")
             },i*100)
         }
     }
@@ -72,7 +69,7 @@ document.getElementById("body").addEventListener("click",(e)=>{
         select.parentElement.children[2].classList.toggle("rotete")
         for(let i = 0; i<select.children.length;i++){
             setTimeout(()=>{
-                console.log(select.children[i].classList.add("slow"))
+                select.children[i].classList.add("slow")
             },i*100)
         }
     }
@@ -81,7 +78,7 @@ document.getElementById("body").addEventListener("click",(e)=>{
         selectPrice.parentElement.children[2].classList.toggle("rotete")
         for(let i = 0; i<selectPrice.children.length;i++){
             setTimeout(()=>{
-                console.log(selectPrice.children[i].classList.add("slow"))
+                selectPrice.children[i].classList.add("slow")
             },i*100)
         }
     }
@@ -89,7 +86,6 @@ document.getElementById("body").addEventListener("click",(e)=>{
  
 
 select.addEventListener("click",(e)=>{
-   console.log(e.target.id)
     if(e.target.id==="select-location"){
     }else{
         show.textContent=e.target.textContent
@@ -109,7 +105,6 @@ selectProperty.addEventListener("click",(e)=>{
     }
  })
 offerPick.addEventListener("click",(e)=>{
-    console.log(e.target.id)
     if(e.target.id==="go-to"){
 
     }else{

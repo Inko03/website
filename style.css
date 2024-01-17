@@ -45,7 +45,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 0 0 0 0;
-    z-index: 1;
+    z-index: 7;
     padding: 0.5rem;
     width: 100vw;
     background-color: rgb(252, 252, 242);
@@ -66,6 +66,14 @@ button{
     border: none;
     background-color: rgb(20, 20, 20);
     color: rgb(252, 252, 242);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+#singin-b:hover{
+    border: none;
+    background-color: rgb(58, 58, 58);
+    color: rgb(252, 252, 242);
+    cursor: pointer;
 }
 #main{
     display: flex;
@@ -285,6 +293,9 @@ button{
     transition: ease-in-out 0.3s;
     position: relative;
 }
+.what-offer:hover #offer-what{
+    transform: scale(1.2);
+}
 .more{
     border-radius: 0.5rem;
     overflow: hidden;
@@ -296,6 +307,7 @@ button{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: ease-in-out 0.3s;
 }
 .gyrascale{
     filter: grayscale(100%);
@@ -309,6 +321,7 @@ button{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    z-index: 1;
 }
 .what-more-tit{
     font-size: 2rem;
@@ -351,6 +364,11 @@ button{
 #clients-opinion{
     text-align: center;
 }
+.opinion:hover .client-photo{
+    transform: scale(1.2);
+    z-index: -1;
+    transition: ease-in-out 0.3s;
+}
 .opinion{
     overflow: hidden;
     border-radius: 0.5rem;
@@ -361,6 +379,7 @@ button{
 .client-photo{
     height: 100%;
     width: 100%;
+    transition: ease-in-out 0.3s;
 }
 .dark-opinion{
     display: flex;
@@ -373,6 +392,7 @@ button{
     background-color: rgba(0, 0, 0, 0.541);
     color:rgb(252, 252, 242);
     transition: ease-in-out 0.3s;
+    z-index: 1;
 }
 .name{
     margin-left: 1rem;
@@ -395,7 +415,8 @@ button{
     font-size: 0.9rem;
     padding: 0.5rem;
     transition: ease-in-out 0.3s;
-    display: none;
+    margin-bottom: -4em;
+    display: block;
 }
 #footer{
     margin-top:2rem ;
@@ -404,15 +425,17 @@ button{
     background-color: black;
 }
 .dark-opinion:hover .opinion-user{
-    display: block;
-    bottom: 0;
+    margin-bottom:0;
 }
 .dark-opinion:hover .name{
     bottom: 0;
 }
 .dark-opinion:hover {
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(0, 0, 0, 0.616);
     bottom: 0;
+}
+.dark-opinion:hover .client-photo {
+    width: 50%;
 }
 .select-location{
     pointer-events: none;
@@ -558,6 +581,10 @@ a{
     text-decoration: none;
     color: rgb(92, 92, 92);
 }
+#footer{
+color: rgb(252, 252, 242);
+text-align: center;
+}
 @media only screen and (max-width: 1650px) {
     .opinion {
         overflow: hidden;
@@ -570,7 +597,7 @@ a{
 }
   @media only screen and (max-width: 1150px) {
     .opinion-user {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
     .cef-log {
         font-size: 5rem;
