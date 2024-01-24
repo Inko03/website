@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
+    <div id="alert" class="alert">
+        <div class="alert-message"><span style="margin: 3px;">Unfortunately, we do not currently have such premises</span></div>
+        <img src="/photo/exit.png" id="exit-alert">
+    </div>
     <div id="menu">
         <div id="logo">Urban</div>
         <div class="main-menu" id="menu-to-click">
-            <span class="in-menu-span"  >Home</span>
+            <span class="in-menu-span" name="main" >Home</span>
             <span class="in-menu-span" name="properties-on">Services</span>
             <span class="in-menu-span" name="properties-on">Property</span>
             <span class="in-menu-span" name="footer">Contact</span>
@@ -95,7 +99,7 @@
             <div style="display: flex; justify-content:space-between;margin-bottom: 3rem;" id="offer-pick">
                 <div class="what-offer" id="properties-on">
                     <div class="more-dark">
-                        <span id="go-to" class="go-to hide">&#x2197;</span>
+                            <a id="go-to" href="/build.html" target="_blank"> <span id="go-to" class="go-to hide">&#x2197;</span></a>
                         <span class="what-more-tit ">Property Management</span>
                         <span class="what-more-inf hide-description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et velit maximus, consequat ligula ut, congue diam. Nunc odio magna, vulputate sed dui sed, sollicitudin pretium arcu. Duis ac erat nec turpis congue commodo et vel magna. Nam hendrerit pellentesque porttitor. Aenean viverra neque eu quam elementum cursus. Vestibulum mi urna, eleifend at luctus eu, pretium ut ipsum. Nulla id fermentum elit.</span>
                     </div>
@@ -103,7 +107,7 @@
                 </div>
                 <div class="what-offer" id="sell-properti">
                     <div class="more-dark">
-                        <span id="go-to" class="go-to hide">&#x2197;</span>
+                        <a id="go-to" href="/build.html" target="_blank"> <span id="go-to" class="go-to hide">&#x2197;</span></a>
                         <span class="what-more-tit ">Property Management</span>
                         <span class="what-more-inf hide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et velit maximus, consequat ligula ut, congue diam. Nunc odio magna, vulputate sed dui sed, sollicitudin pretium arcu. Duis ac erat nec turpis congue commodo et vel magna. Nam hendrerit pellentesque porttitor. Aenean viverra neque eu quam elementum cursus. Vestibulum mi urna, eleifend at luctus eu, pretium ut ipsum. Nulla id fermentum elit.</span>
                     </div>
@@ -111,7 +115,7 @@
                 </div>
                 <div class="what-offer more" id="managment">
                     <div class="more-dark ">
-                        <span id="go-to" class="go-to">&#x2197;</span>
+                        <a id="go-to" href="/build.html" target="_blank"> <span id="go-to" class="go-to">&#x2197;</span></a>
                         <span class="what-more-tit small-what-tit">Property Management</span>
                         <span class="what-more-inf ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et velit maximus, consequat ligula ut, congue diam. Nunc odio magna, vulputate sed dui sed, sollicitudin pretium arcu. Duis ac erat nec turpis congue commodo et vel magna. Nam hendrerit pellentesque porttitor. Aenean viverra neque eu quam elementum cursus. Vestibulum mi urna, eleifend at luctus eu, pretium ut ipsum. Nulla id fermentum elit.</span>
                     </div>
@@ -157,8 +161,14 @@
             </div>
         </div>
         <div id="footer">
-            <span>Telefon:XXX XXX XXX</span>
-            <span>Fax:XXXXXXX</span>
+            <div id="left">
+                <span>Phone:xxxxxxxxx</span><br>
+                <span>Fax:xxxxxxxxx</span>
+            </div>
+            <div id="right">
+                <span>Adres: New York 1</span><br>
+                <span>Fax:XXXXXXX</span>
+            </div>
         </div>
 
     </div>

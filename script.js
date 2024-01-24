@@ -12,6 +12,8 @@ const menu = document.getElementById("menu-burger")
 const menuIn = document.getElementById("menu-burger-in")
 const menuClick = document.getElementById("menu-to-click")
 const menuu = document.getElementById("menu-burger")
+const serch = document.getElementById("serch-button")
+const alert = document.getElementById("alert")
 
 document.getElementById("body").addEventListener("click",(e)=>{
     if(e.target.id!="menu-burger"){
@@ -117,8 +119,8 @@ offerPick.addEventListener("click",(e)=>{
                     e.target.children[1].classList.toggle("small-what-tit")
                     offerPick.children[i].children[0].children[2].classList.toggle("hide-description")
                     e.target.children[2].classList.toggle("hide-description")
-                    offerPick.children[i].children[0].children[0].classList.toggle("hide")
-                    e.target.children[0].classList.toggle("hide")
+                    offerPick.children[i].children[0].children[0].children[0].classList.toggle("hide")
+                    e.target.children[0].children[0].classList.toggle("hide")
                 }else{
                 }
             }
@@ -136,4 +138,14 @@ cha.addEventListener("click",(e)=>{
     }
   }
 
+})
+
+serch.addEventListener('click',()=>{
+    console.log(alert.children[0])
+    alert.classList.toggle("alert-active")
+})
+alert.addEventListener('click',(e)=>{
+    if(e.target.id==="exit-alert"){
+        alert.classList.remove("alert-active")
+    }
 })
